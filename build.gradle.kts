@@ -36,4 +36,8 @@ dependencies {
     implementation("ru.tinkoff.kora:http-server-undertow")
     implementation("ru.tinkoff.kora:micrometer-module")
     implementation("ru.tinkoff.kora:json-module")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
+
+
+
 }
