@@ -1,7 +1,7 @@
 plugins {
-    java
-    kotlin("jvm") version "1.7.10"
-    id("com.google.devtools.ksp") version "1.7.10-1.0.6"
+//    java
+    kotlin("jvm") version "1.7.21"
+    id("com.google.devtools.ksp") version "1.7.21-1.0.8"
 }
 
 group = "ru.tinkoff.kora.hello.world"
@@ -25,7 +25,8 @@ kotlin {
 
 }
 
-val koraVersion = "0.10.1"
+//val koraVersion = "0.10.1"
+val koraVersion = "1.0.9"
 
 dependencies {
     val kora = platform("ru.tinkoff.kora:kora-parent:$koraVersion")
@@ -40,10 +41,14 @@ dependencies {
     implementation("ru.tinkoff.kora:database-common")
     implementation("ru.tinkoff.kora:database-jdbc")
 
+    implementation("ru.tinkoff.kora:config-yaml")
+
+
+
 //    implementation("ru.tinkoff.kora:database-jdbi")
 //    implementation("ru.tinkoff.kora:database-r2dbc")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
+//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 
 
 

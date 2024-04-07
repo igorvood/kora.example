@@ -1,0 +1,4 @@
+services:
+  foo:
+    bar: bar
+    baz: baя
