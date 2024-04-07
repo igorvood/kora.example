@@ -1,4 +1,5 @@
 plugins {
+    java
     kotlin("jvm") version "1.7.10"
     id("com.google.devtools.ksp") version "1.7.10-1.0.6"
 }
@@ -36,6 +37,12 @@ dependencies {
     implementation("ru.tinkoff.kora:http-server-undertow")
     implementation("ru.tinkoff.kora:micrometer-module")
     implementation("ru.tinkoff.kora:json-module")
+    implementation("ru.tinkoff.kora:database-common")
+    implementation("ru.tinkoff.kora:database-jdbc")
+
+//    implementation("ru.tinkoff.kora:database-jdbi")
+//    implementation("ru.tinkoff.kora:database-r2dbc")
+
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 
 
