@@ -12,14 +12,16 @@ import java.nio.charset.StandardCharsets
 
 @Component
 @HttpController
-class HelloWorldController {
+class HelloWorldController(
+    private val responseGenerator: ResponseGenerator
+) {
     @HttpRoute(method = HttpMethod.GET, path = "/hello/world")
     fun helloWorld(): HttpServerResponse {
         return SimpleHttpServerResponse(
             200,
             "text/plain",
             HttpHeaders.of(),
-            StandardCharsets.UTF_8.encode("Hello world")
+            StandardCharsets.UTF_8.encode(responseGenerator.generate())
         )
     }
 }
