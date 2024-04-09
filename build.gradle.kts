@@ -25,8 +25,8 @@ kotlin {
 
 }
 
-//val koraVersion = "0.10.1"
-val koraVersion = "1.0.9"
+val koraVersion = "0.14.1"
+//val koraVersion = "1.0.9"
 
 dependencies {
     val kora = platform("ru.tinkoff.kora:kora-parent:$koraVersion")
@@ -48,7 +48,7 @@ dependencies {
 //    implementation("ru.tinkoff.kora:database-jdbi")
 //    implementation("ru.tinkoff.kora:database-r2dbc")
 
-//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.7.3")
 
 
 

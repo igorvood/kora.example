@@ -7,5 +7,5 @@ import ru.tinkoff.kora.database.jdbc.JdbcRepository
 @Repository
 interface EntityRepository : JdbcRepository {
     @Query("SELECT id, value1, value2 FROM test_table WHERE id = :id")
-    fun getOneById(id: Long): Entity
+    fun getOneById(id: Long): EntityVood
 }
